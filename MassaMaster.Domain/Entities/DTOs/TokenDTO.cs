@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MassaMaster.Domain.Entities.DTOs
 {
-    internal class TokenDTO
+    public class TokenDTO
     {
+        public string Token { get; set; }
+        public string Message { get; set; }
+        public bool IsSuccess { get; set; }
     }
 }
