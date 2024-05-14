@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Entities\Auth\" />
-    <Folder Include="Entities\Models\" />
   </ItemGroup>
 
 </Project>
