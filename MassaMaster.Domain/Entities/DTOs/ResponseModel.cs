@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MassaMaster.Domain.Entities.DTOs
 {
-    internal class ResponseModel
+    public class ResponseModel
     {
+        public string Message { get; set; }
+        public int StatusCode { get; set; }
+        public bool IsSuccess { get; set; }
     }
 }
