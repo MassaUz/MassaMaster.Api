@@ -1,18 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MassaMaster.Domain.Entities;
 using MassaMaster.Domain.Entities.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MassaMaster.Domain.Entities.Auth;
 
 namespace MassaMaster.Infrastructure.Persistance
 {
-    public class MassaMasterDbContext : IdentityDbContext<User,IdentityRole<Guid>,Guid> ,IMassaMasterDbContext
+    public class MassaMasterDbContext : IdentityDbContext<User,IdentityRole<Guid>,Guid> , IMassaMasterDbContext
     {
         public MassaMasterDbContext(DbContextOptions<MassaMasterDbContext> options) : base(options) 
         {
